@@ -15,10 +15,10 @@ app.get('/api/emails', async (req, res) => {
   res.json(emails);
 });
 
-//Send a GET request to /api/emails/:id
-// app.get('/api/emails/:id', (req, res) => {
-//   const email = data.emails.find(quote => quote.id == req.params.id);
-//   res.json({email});
-// });
+// Send a GET request to /api/emails/:id
+app.get('/api/emails/:id', async (req, res) => {
+  const email = await records.getEmail(req.params.id);
+  res.json(email);
+});
 
 app.listen(3000, () => console.log('Quote API listening on port 3000!'));
