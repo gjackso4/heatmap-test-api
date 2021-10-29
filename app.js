@@ -43,10 +43,10 @@ app.get('/api/emails/:id', async (req, res) => {
   }
 });
 
-// Send a GET request to /api/emails/:id
+// Send a GET request to /api/emails/:group
 app.get('/api/emails/group/:group', async (req, res) => {
   try {
-    const email = await records.getEmail(req.params.group);
+    const email = await records.getEmailByGroup(req.params.group);
     if(email) {
       res.json(email);
     } else {
