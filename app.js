@@ -5,7 +5,7 @@ const records = require('./records');
 
 
 app.get('/', (req, res) => {
-  res.json({message: "Thinkiry API"});
+  res.json({message: "Email Test API"});
 });
 
 
