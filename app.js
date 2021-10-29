@@ -10,6 +10,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname+'/public/index.html'));
 });
 
+app.get('/client', (req, res) => {
+  res.sendFile(path.join(__dirname+'/public/client.html'));
+});
 
 // Send a GET request to /api/emails to READ a list of emails
 app.get('/api/emails', async (req, res) => {
