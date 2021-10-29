@@ -43,11 +43,24 @@ app.get('/api/emails/:id', async (req, res) => {
   }
 });
 
-// Send a GET request to /api/emails/:group
+// Send a GET request to /api/emails/group/:group
 app.get('/api/emails/group/:group', async (req, res) => {
   try {
     const email = await records.getEmailByGroup(req.params.group);
-    console.log("Group: " + req.params.group);
+    if(email) {
+      res.json(email);
+    } else {
+      res.status(404).json({message: "Email Not Found"});
+    }
+  } catch(err) {
+    res.status(500).json({message: err.message});
+  }
+});
+
+// Send a GET request to /api/emails/campaign/:campaign
+app.get('/api/emails/campaign/:campaign', async (req, res) => {
+  try {
+    const email = await records.getEmailByCampaign(req.params.campaign);
     if(email) {
       res.json(email);
     } else {

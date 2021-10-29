@@ -35,9 +35,19 @@ async function getEmailByGroup(group){
   return emails.emails.filter(email => email.creativeGroup == group);
 }
 
+/**
+ * Gets list of emails by Campaign
+ * @param {string} campaign - Accepts the Campaign of the specified email.
+ */
+async function getEmailByCampaign(campaign){
+  const emails = await getEmails();
+  return emails.emails.filter(email => email.campaignName == campaign);
+}
+
 
 module.exports = {
   getEmails,
   getEmail,
-  getEmailByGroup
+  getEmailByGroup,
+  getEmailByCampaign
 }
