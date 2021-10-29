@@ -16,12 +16,3 @@ function getEmails(){
     });
   });
 }
-
-/**
- * Gets a specific email by ID
- * @param {number} id - Accepts the ID of the specified email.
- */
-async function getEmail(id){
-  const emails = await getEmails();
-  return emails.records.find(record => record.id == id);
-}
