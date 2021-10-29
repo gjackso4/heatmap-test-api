@@ -28,11 +28,11 @@ async function getEmail(id){
 
 /**
  * Gets list of emails by Group
- * @param {number} id - Accepts the ID of the specified email.
+ * @param {string} group - Accepts the Group of the specified email.
  */
 async function getEmailByGroup(group){
   const emails = await getEmails();
-  return emails.emails.filter(email => email.group == group);
+  return emails.emails.filter(email => email.creativeGroup == group);
 }
 
 

@@ -47,6 +47,7 @@ app.get('/api/emails/:id', async (req, res) => {
 app.get('/api/emails/group/:group', async (req, res) => {
   try {
     const email = await records.getEmailByGroup(req.params.group);
+    console.log("Group: " + req.params.group);
     if(email) {
       res.json(email);
     } else {
