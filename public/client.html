@@ -33,11 +33,6 @@
       
       draw();
       
-      get('canvas').onmousemove = function (e) {
-          heat.add([e.layerX, e.layerY, 1]);
-          frame = frame || window.requestAnimationFrame(draw);
-      };
-      
       var radius = get('radius'),
           blur = get('blur'),
           changeType = 'oninput' in radius ? 'oninput' : 'onchange';
