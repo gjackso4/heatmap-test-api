@@ -1,15 +1,18 @@
 const express = require('express');
 const app = express();
 
+const records = require('./records');
+
+
 app.get('/', (req, res) => {
   res.json({message: "Thinkiry API"});
 });
 
 
 // Send a GET request to /api/emails to READ a list of emails
-app.get('/api/emails', (req, res) => {
-
-  res.json({data});
+app.get('/api/emails', async (req, res) => {
+  const emails = await records.getEmails();
+  res.json({emails});
 });
 
 //Send a GET request to /api/emails/:id
@@ -19,18 +22,3 @@ app.get('/api/emails/:id', (req, res) => {
 });
 
 app.listen(3000, () => console.log('Quote API listening on port 3000!'));
-
-
-const data = {
-  emails: [
-    {
-      id: 1
-    },
-    {
-      id: 2
-    },
-    {
-      id: 3
-    }
-  ]
-}
