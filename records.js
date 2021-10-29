@@ -23,11 +23,8 @@ function getEmails(){
  */
 async function getEmail(id){
   const emails = await getEmails();
-  // return emails.records.find(record => record.id == id);
-  console.log(emails);
+  return emails.emails.find(email => email.id == id);
 }
-
-
 
 module.exports = {
   getEmails,
