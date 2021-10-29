@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const path = require('path');
+const router = express.Router();
 
 const records = require('./records');
 
@@ -71,4 +73,5 @@ app.get('/api/emails/campaign/:campaign', async (req, res) => {
   }
 });
 
+app.use('/', router);
 app.listen(3000, () => console.log('Quote API listening on port 3000!'));
