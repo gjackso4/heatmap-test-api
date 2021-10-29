@@ -785,11 +785,9 @@
                                      window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
       var emailHeight = $('.email').height();
-      var emailWidth = $('.email').width();
 
-      $('.canvas').css({
-        "height": emailHeight,
-        "width": emailWidth
+      $('#canvas').css({
+        "height": `${emailHeight}px`
       })
 
       console.log(emailHeight);
