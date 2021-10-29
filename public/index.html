@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <canvas id="canvas" width="600" height="100%"></canvas>
+
+
+
+
+<div class="email">
+<!-- *******************************EMAIL********************** -->
 <table align="center" border="0" cellpadding="0" cellspacing="0" class="max" style="max-width: 600px;" width="100%">
   <tbody><tr>
   <td align="center" valign="top" width="100%">
@@ -749,3 +763,59 @@
   </td>
   </tr>
   </tbody></table>
+</div>
+  <!-- *******************************EMAIL********************** -->
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/js/simpleheat.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script>
+
+      window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+                                     window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+      var emailHeight = $('.email').height();
+      var emailWidth = $('.email').width();
+
+      $('.canvas').css({
+        "height": emailHeight,
+        "width": emailWidth
+      })
+
+      function get(id) {
+          return document.getElementById(id);
+      }
+      
+      var heat = simpleheat('canvas').data(data).max(18),
+          frame;
+      
+      function draw() {
+          console.time('draw');
+          heat.draw();
+          console.timeEnd('draw');
+          frame = null;
+      }
+      
+      draw();
+      
+      var radius = get('radius'),
+          blur = get('blur'),
+          changeType = 'oninput' in radius ? 'oninput' : 'onchange';
+      
+      radius[changeType] = blur[changeType] = function (e) {
+          heat.radius(+radius.value, +blur.value);
+          frame = frame || window.requestAnimationFrame(draw);
+      };
+      
+      </script>
+  </body>
+</html>
