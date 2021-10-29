@@ -1,13 +1,212 @@
 {
   "emails": [
     {
-      "id": 1
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "A_VIEW_WEB",
+      "linkLabelClick": "10",
+      "clickThroughRate": "0.33%",
+      "totalClickCount": "3.10%"
     },
     {
-      "id": 2
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "A_COLLEGE_LOGO",
+      "linkLabelClick": "12",
+      "clickThroughRate": "0.40%",
+      "totalClickCount": "3.72%"
     },
     {
-      "id": 3
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "A_CHEVY_LOGO",
+      "linkLabelClick": "15",
+      "clickThroughRate": "0.50%",
+      "totalClickCount": "4.64%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "SC_BTN_LEARN_MORE",
+      "linkLabelClick": "12",
+      "clickThroughRate": "0.33%",
+      "totalClickCount": "3.10%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "BN_TXT_ABOUT",
+      "linkLabelClick": "20",
+      "clickThroughRate": "0.66%",
+      "totalClickCount": "6.14%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "BN_TXT_VEHICLES",
+      "linkLabelClick": "22",
+      "clickThroughRate": "0.74%",
+      "totalClickCount": "6.91%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "BN_TXT_FAQS",
+      "linkLabelClick": "27",
+      "clickThroughRate": "0.83%",
+      "totalClickCount": "8.46%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "F_TXT_WEBSITE",
+      "linkLabelClick": "10",
+      "clickThroughRate": "0.74%",
+      "totalClickCount": "6.91%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "F_TXT_REGISTER",
+      "linkLabelClick": "35",
+      "clickThroughRate": "1.16%",
+      "totalClickCount": "10.56%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "F_UNSUB",
+      "linkLabelClick": "37",
+      "clickThroughRate": "1.24%",
+      "totalClickCount": "11.56%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "BN_TXT_ABOUT",
+      "linkLabelClick": "20",
+      "clickThroughRate": "0.66%",
+      "totalClickCount": "6.14%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "F_COPYRIGHT",
+      "linkLabelClick": "40",
+      "clickThroughRate": "1.33%",
+      "totalClickCount": "12.33%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "A",
+      "linkLabel": "F_PRIVACY",
+      "linkLabelClick": "41",
+      "clickThroughRate": "1.33%",
+      "totalClickCount": "12.33%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "A_VIEW_WEB",
+      "linkLabelClick": "10",
+      "clickThroughRate": "0.33%",
+      "totalClickCount": "3.10%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "A_COLLEGE_LOGO",
+      "linkLabelClick": "12",
+      "clickThroughRate": "0.40%",
+      "totalClickCount": "3.72%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "SC_BTN_LEARN_MORE",
+      "linkLabelClick": "12",
+      "clickThroughRate": "0.33%",
+      "totalClickCount": "3.10%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "BN_TXT_ABOUT",
+      "linkLabelClick": "20",
+      "clickThroughRate": "0.66%",
+      "totalClickCount": "6.14%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "BN_TXT_VEHICLES",
+      "linkLabelClick": "22",
+      "clickThroughRate": "0.74%",
+      "totalClickCount": "6.91%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "BN_TXT_OFFERS",
+      "linkLabelClick": "20",
+      "clickThroughRate": "0.66%",
+      "totalClickCount": "6.14%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "BN_TXT_FAQS",
+      "linkLabelClick": "27",
+      "clickThroughRate": "0.91%",
+      "totalClickCount": "8.46%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "F_TXT_FAQS",
+      "linkLabelClick": "30",
+      "clickThroughRate": "0.99%",
+      "totalClickCount": "9.24%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "F_TXT_WEBSITE",
+      "linkLabelClick": "10",
+      "clickThroughRate": "0.74%",
+      "totalClickCount": "6.91%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "F_TXT_REGISTER",
+      "linkLabelClick": "35",
+      "clickThroughRate": "1.16%",
+      "totalClickCount": "10.78%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "F_UNSUB",
+      "linkLabelClick": "37",
+      "clickThroughRate": "1.24%",
+      "totalClickCount": "11.56%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "F_COPYRIGHT",
+      "linkLabelClick": "40",
+      "clickThroughRate": "1.33%",
+      "totalClickCount": "12.33%"
+    },
+    {
+      "id": "VPP",
+      "creativeGroup": "B",
+      "linkLabel": "F_PRIVACY",
+      "linkLabelClick": "41",
+      "clickThroughRate": "1.33%",
+      "totalClickCount": "12.33%"
     }
   ]
 }
