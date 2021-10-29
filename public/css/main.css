@@ -5,7 +5,7 @@ iframe {
   z-index: -1;
 }
 
-canvas {
+.canvas {
   position: absolute;
   margin: auto;
   position: absolute;
