@@ -26,7 +26,18 @@ async function getEmail(id){
   return emails.emails.find(email => email.id == id);
 }
 
+/**
+ * Gets list of emails by Group
+ * @param {number} id - Accepts the ID of the specified email.
+ */
+async function getEmailByGroup(group){
+  const emails = await getEmails();
+  return emails.emails.filter(email => email.group == group);
+}
+
+
 module.exports = {
   getEmails,
-  getEmail
+  getEmail,
+  getEmailByGroup
 }

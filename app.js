@@ -17,8 +17,6 @@ app.get('/api/emails', async (req, res) => {
 
 // Send a GET request to /api/emails/:id
 app.get('/api/emails/:id', async (req, res) => {
-  
-
   try {
     const email = await records.getEmail(req.params.id);
     if(email) {
@@ -29,8 +27,34 @@ app.get('/api/emails/:id', async (req, res) => {
   } catch(err) {
     res.status(500).json({message: err.message});
   }
+});
 
-  
+// Send a GET request to /api/emails/:id
+app.get('/api/emails/:id', async (req, res) => {
+  try {
+    const email = await records.getEmail(req.params.id);
+    if(email) {
+      res.json(email);
+    } else {
+      res.status(404).json({message: "Email Not Found"});
+    }
+  } catch(err) {
+    res.status(500).json({message: err.message});
+  }
+});
+
+// Send a GET request to /api/emails/:id
+app.get('/api/emails/group/:group', async (req, res) => {
+  try {
+    const email = await records.getEmail(req.params.group);
+    if(email) {
+      res.json(email);
+    } else {
+      res.status(404).json({message: "Email Not Found"});
+    }
+  } catch(err) {
+    res.status(500).json({message: err.message});
+  }
 });
 
 app.listen(3000, () => console.log('Quote API listening on port 3000!'));
