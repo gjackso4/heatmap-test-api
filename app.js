@@ -12,13 +12,13 @@ app.get('/', (req, res) => {
 // Send a GET request to /api/emails to READ a list of emails
 app.get('/api/emails', async (req, res) => {
   const emails = await records.getEmails();
-  res.json({emails});
+  res.json(emails);
 });
 
 //Send a GET request to /api/emails/:id
-app.get('/api/emails/:id', (req, res) => {
-  const email = data.emails.find(quote => quote.id == req.params.id);
-  res.json({email});
-});
+// app.get('/api/emails/:id', (req, res) => {
+//   const email = data.emails.find(quote => quote.id == req.params.id);
+//   res.json({email});
+// });
 
 app.listen(3000, () => console.log('Quote API listening on port 3000!'));
