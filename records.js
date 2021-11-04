@@ -1,10 +1,10 @@
 const fs = require('fs');
 
 /**
- * Gets all emails
+ * Gets all links
  * @param None
  */
-function getEmails(){
+function getLinks(){
   return new Promise((resolve, reject) => {
     fs.readFile('data.json', 'utf8', (err, data) => {
       if (err) {
@@ -18,36 +18,30 @@ function getEmails(){
 }
 
 /**
- * Gets a specific email by ID
- * @param {number} id - Accepts the ID of the specified email.
+ * Gets a specific link by ID
+ * @param {number} id - Accepts the ID of the specified link.
  */
-async function getEmail(id){
-  const emails = await getEmails();
-  return emails.emails.find(email => email.id == id);
+async function getLink(id){
+  const links = await getLinks();
+  return links.links.find(link => link.id == id);
 }
 
-/**
- * Gets list of emails by Group
- * @param {string} group - Accepts the Group of the specified email.
- */
-async function getEmailByGroup(group){
-  const emails = await getEmails();
-  return emails.emails.filter(email => email.creativeGroup == group);
-}
 
-/**
- * Gets list of emails by Campaign
- * @param {string} campaign - Accepts the Campaign of the specified email.
- */
-async function getEmailByCampaign(campaign){
-  const emails = await getEmails();
-  return emails.emails.filter(email => email.campaignName == campaign);
+function getEmails(){
+  return new Promise((resolve, reject) => {
+    fs.readFile('emails.json', 'utf8', (err, data) => {
+      if (err) {
+        reject(err);
+      } else {
+        const json = JSON.parse(data);
+        resolve(json);
+      }
+    });
+  });
 }
-
 
 module.exports = {
-  getEmails,
-  getEmail,
-  getEmailByGroup,
-  getEmailByCampaign
+  getLinks,
+  getLink,
+  getEmails
 }

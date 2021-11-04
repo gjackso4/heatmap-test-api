@@ -1,0 +1,34 @@
+{
+  "emails": [
+    {
+      "id": 1,
+      "campaignName": "VPP",
+      "campaignDescription": "Sample Email One",
+      "previewUrl": ""
+    },
+    {
+      "id": 2,
+      "campaignName": "ABC",
+      "campaignDescription": "Sample Email Two",
+      "previewUrl": ""
+    },
+    {
+      "id": 3,
+      "campaignName": "DEF",
+      "campaignDescription": "Sample Email Three",
+      "previewUrl": ""
+    },
+    {
+      "id": 4,
+      "campaignName": "GHI",
+      "campaignDescription": "Sample Email Four",
+      "previewUrl": ""
+    },
+    {
+      "id": 5,
+      "campaignName": "JKL",
+      "campaignDescription": "Sample Email Five",
+      "previewUrl": ""
+    }
+  ]
+}
