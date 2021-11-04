@@ -34,6 +34,13 @@ app.get('/api/links/:id', async (req, res) => {
   }
 });
 
+// Send a GET request to /api/links to READ a list of links
+app.get('/api/emails', async (req, res) => {
+  const emails = await records.getEmails();
+  res.json(emails);
+});
+
+
 
 app.use(express.static(path.join(__dirname, '/public')));
 app.listen(3000, () => console.log('Quote API listening on port 3000!'));
