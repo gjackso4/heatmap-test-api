@@ -14,6 +14,26 @@ app.get('/sample-email', (req, res) => {
   res.sendFile(path.join(__dirname+'/public/sample-email.html'));
 });
 
+app.get('/B200004043_2111_GMC_NovemberOwnereNews', (req, res) => {
+  res.sendFile(path.join(__dirname+'/public/emails/B200004043_2111_GMC_NovemberOwnereNews.html'));
+});
+
+app.get('/B2000003805_2111_GMC_RET_RRGM01_Hummer_EV_Em1', (req, res) => {
+  res.sendFile(path.join(__dirname+'/public/emails/B2000003805_2111_GMC_RET_RRGM01_Hummer_EV_Em1.html'));
+});
+
+app.get('/B2000003805_2111_GMC_RET_RRGM02_Hummer_EV_Em1', (req, res) => {
+  res.sendFile(path.join(__dirname+'/public/emails/B2000003805_2111_GMC_RET_RRGM02_Hummer_EV_Em1.html'));
+});
+
+app.get('/B2000004059_2111_CHE_RET_V1_RRCH01_NovAcc_1PM', (req, res) => {
+  res.sendFile(path.join(__dirname+'/public/emails/B2000004059_2111_CHE_RET_V1_RRCH01_NovAcc_1PM.html'));
+});
+
+app.get('/B2000004059_2111_CHE_RET_V2_RRCH02_NovAcc_1PM', (req, res) => {
+  res.sendFile(path.join(__dirname+'/public/emails/B2000004059_2111_CHE_RET_V2_RRCH02_NovAcc_1PM.html'));
+});
+
 // Send a GET request to /api/links to READ a list of links
 app.get('/api/links', async (req, res) => {
   const links = await records.getLinks();
