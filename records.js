@@ -27,9 +27,9 @@ async function getLink(id){
 }
 
 
-function getEmails(){
+function getEmails(fileName){
   return new Promise((resolve, reject) => {
-    fs.readFile('emails.json', 'utf8', (err, data) => {
+    fs.readFile(fileName, 'utf8', (err, data) => {
       if (err) {
         reject(err);
       } else {

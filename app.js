@@ -36,9 +36,27 @@ app.get('/api/links/:id', async (req, res) => {
 
 // Send a GET request to /api/links to READ a list of links
 app.get('/api/emails', async (req, res) => {
-  const emails = await records.getEmails();
+  const emails = await records.getEmails('emails.json');
   res.json(emails);
 });
+
+
+
+app.get('/api/emails/B2000003805_2111_GMC_RET_RRGM01_Hummer_EV_Em1', async (req, res) => {
+  const emails = await records.getEmails('data/B2000003805_2111_GMC_RET_RRGM01_Hummer_EV_Em1.json');
+  res.json(emails);
+});
+
+app.get('/api/emails/B2000003805_2111_GMC_RET_RRGM02_Hummer_EV_Em1', async (req, res) => {
+  const emails = await records.getEmails('data/B2000003805_2111_GMC_RET_RRGM02_Hummer_EV_Em1.json');
+  res.json(emails);
+});
+
+app.get('/api/emails/B200004043_2111_GMCNovOwner_eNews', async (req, res) => {
+  const emails = await records.getEmails('data/B200004043_2111_GMCNovOwner_eNews.json');
+  res.json(emails);
+});
+
 
 
 
