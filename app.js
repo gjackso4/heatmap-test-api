@@ -43,17 +43,17 @@ app.get('/api/emails', async (req, res) => {
 
 
 app.get('/api/emails/B2000003805_2111_GMC_RET_RRGM01_Hummer_EV_Em1', async (req, res) => {
-  const emails = await records.getEmails('data/B2000003805_2111_GMC_RET_RRGM01_Hummer_EV_Em1.json');
+  const emails = await records.getEmails('B2000003805_2111_GMC_RET_RRGM01_Hummer_EV_Em1.json');
   res.json(emails);
 });
 
 app.get('/api/emails/B2000003805_2111_GMC_RET_RRGM02_Hummer_EV_Em1', async (req, res) => {
-  const emails = await records.getEmails('data/B2000003805_2111_GMC_RET_RRGM02_Hummer_EV_Em1.json');
+  const emails = await records.getEmails('B2000003805_2111_GMC_RET_RRGM02_Hummer_EV_Em1.json');
   res.json(emails);
 });
 
 app.get('/api/emails/B200004043_2111_GMCNovOwner_eNews', async (req, res) => {
-  const emails = await records.getEmails('data/B200004043_2111_GMCNovOwner_eNews.json');
+  const emails = await records.getEmails('B200004043_2111_GMCNovOwner_eNews.json');
   res.json(emails);
 });
 
