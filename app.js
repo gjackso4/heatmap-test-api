@@ -14,7 +14,7 @@ app.get('/sample-email', (req, res) => {
   res.sendFile(path.join(__dirname+'/public/sample-email.html'));
 });
 
-app.get('/B200004043_2111_GMC_NovemberOwnereNews', (req, res) => {
+app.get('/B200004043_2111_GMCNovOwner_eNews', (req, res) => {
   res.sendFile(path.join(__dirname+'/public/emails/B200004043_2111_GMC_NovemberOwnereNews.html'));
 });
 
